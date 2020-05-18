@@ -52,7 +52,7 @@ def getTickerData(stock):
     firms = recommendations.iloc[:, 0].values
     actions = recommendations.iloc[:, 1].values
     size = firms.size
-    lines.append("Recent Analysis by Analysts:" +
+    lines.append("Recent Analysis by Analysts: " +
                  firms[size - 1] + " - " + actions[size - 1] + ", " +
                  firms[size - 2] + " - " + actions[size - 2] + ", " +
                  firms[size - 3] + " - " + actions[size - 3] + ", " +
