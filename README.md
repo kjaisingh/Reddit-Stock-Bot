@@ -7,7 +7,6 @@ The bot operates on the /r/Investing and /r/Stocks subreddits, and is compatible
 A sample invokation of the bot on one of the above subreddits is as follows: *How is the stock of $$AAPL doing?*\
 The corresponding bot response is:\
 *Hello! This is the StockInfoBot. I have come here to provide information about the AAPL stock.*
-
 *Stock Name: Apple Inc.*\
 *Day Low: $300.42.*\
 *Day High: $307.9.*\
