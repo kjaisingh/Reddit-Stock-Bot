@@ -12,6 +12,7 @@ import praw
 import yfinance as yf
 from extraction import tickers
 import pandas as pd
+import string
 
 
 # defining basic variables
@@ -20,7 +21,7 @@ reddit = praw.Reddit(client_id = 'JW1hpceXZbX0hA',
                      username = 'StockInfoBot',
                      password = 'stockinfobot',
                      user_agent = 'wordbot by /u/jfishersolutions')                 
-subreddit = reddit.subreddit('StockInfoBotTest')
+subreddit = reddit.subreddit('Investing+Stocks')
 key = '$$'
 
 
@@ -34,7 +35,7 @@ def getTickerData(stock):
     
     # append basic bot output
     lines = []
-    lines.append('Hello! This is the StockInfoBot created by /u/kjaisingh. I have come here to provide information about the ' + stock + ' stock.\n\n')
+    lines.append('Hello! This is the StockInfoBot created by /u/kjaisingh. I have come here to provide information about the ' + stock + ' stock.\n')
     
     # append basic stock data
     tickerInfo = yf.Ticker(stock)
@@ -64,6 +65,8 @@ def getTickerData(stock):
     for line in lines:
         summary += line
         summary += '\n\n'
+        
+    print(summary)
     
     # return string with comment data        
     return summary
@@ -84,6 +87,7 @@ for comment in subreddit.stream.comments():
         for word in words:
             if key in word:
                 ticker = word.replace('$$', '')
+                ticker.translate(str.maketrans('', '', string.punctuation))
                 if ticker.isupper():
                     stocks.append(ticker)
         
