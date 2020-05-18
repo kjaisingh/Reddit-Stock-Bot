@@ -4,7 +4,7 @@ The bot operates on the /r/Investing and /r/Stocks subreddits, and is compatible
 
 
 ### Invokation
-A sample invokation of the bot on one of the above subreddits is as follows: *How is the stock of $$AAPL doing?*.
+A sample invokation of the bot on one of the above subreddits is as follows: *How is the stock of $$AAPL doing?*\
 The corresponding bot response is:\
 *Hello! This is the StockInfoBot. I have come here to provide information about the AAPL stock.*
 
