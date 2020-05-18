@@ -16,14 +16,7 @@ The corresponding bot response is:\
 *200 Day Average: $283.89764.*\
 *Company Industry: Consumer Electronics.*\
 *Company Website: http://www.apple.com.*\
-
-*Recent Analysis by Analysts:*\
-*Wedbush - Outperform.*\
-*Raymond James - Outperform.*\
-*DA Davidson - Buy.*\
-*Nomura Instinet - Neutral.*\
-*UBS - Buy.*
-
+*Recent Analysis by Analysts: Wedbush - Outperform, Raymond James - Outperform, DA Davidson - Buy, Nomura Instinet - Neutral, UBS - Buy.*
 
 ### Execution
 1. Extract stock ticker information from dataset with S&P-500 information. 
