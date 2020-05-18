@@ -15,7 +15,7 @@ The corresponding bot response is:\
 *50 Day Average: $281.61237.*\
 *200 Day Average: $283.89764.*\
 *Company Industry: Consumer Electronics.*\
-*Company Website: http://www.apple.com.*\
+*Company Website*: http://www.apple.com. \
 *Recent Analysis by Analysts: Wedbush - Outperform, Raymond James - Outperform, DA Davidson - Buy, Nomura Instinet - Neutral, UBS - Buy.*
 
 ### Execution
