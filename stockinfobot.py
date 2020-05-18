@@ -45,19 +45,19 @@ def getTickerData(stock):
     lines.append('50 Day Average: ' + '$' + str(tickerInfo.info.get('fiftyDayAverage')) + '.')
     lines.append('200 Day Average: ' + '$' + str(tickerInfo.info.get('twoHundredDayAverage')) + '.')
     lines.append('Company Industry: ' + tickerInfo.info.get('industry') + '.')
-    lines.append('Company Website: ' + tickerInfo.info.get('website') + '.\n\n')
+    lines.append('Company Website: ' + tickerInfo.info.get('website') + '.')
     
     # append stock recommendations
-    lines.append("Recent Analysis by Analysts:")
     recommendations = tickerInfo.recommendations
     firms = recommendations.iloc[:, 0].values
     actions = recommendations.iloc[:, 1].values
     size = firms.size
-    lines.append(firms[size - 1] + " - " + actions[size - 1] + ".")
-    lines.append(firms[size - 2] + " - " + actions[size - 2] + ".")
-    lines.append(firms[size - 3] + " - " + actions[size - 3] + ".")
-    lines.append(firms[size - 4] + " - " + actions[size - 4] + ".")
-    lines.append(firms[size - 5] + " - " + actions[size - 5] + ".")
+    lines.append("Recent Analysis by Analysts:" +
+                 firms[size - 1] + " - " + actions[size - 1] + ", " +
+                 firms[size - 2] + " - " + actions[size - 2] + ", " +
+                 firms[size - 3] + " - " + actions[size - 3] + ", " +
+                 firms[size - 4] + " - " + actions[size - 4] + ", " +
+                 firms[size - 5] + " - " + actions[size - 5] + ".")
     
     # create a summary string with the comment data
     summary = ''
