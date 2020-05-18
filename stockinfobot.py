@@ -48,17 +48,18 @@ def getTickerData(stock):
     lines.append('Company Industry: ' + tickerInfo.info.get('industry') + '.')
     lines.append('Company Website: ' + tickerInfo.info.get('website') + '.')
     
-    # append stock recommendations
+    # append stock recommendations if suitable number of recommendations available
     recommendations = tickerInfo.recommendations
     firms = recommendations.iloc[:, 0].values
     actions = recommendations.iloc[:, 1].values
     size = firms.size
-    lines.append("Recent Analysis by Analysts: " +
-                 firms[size - 1] + " - " + actions[size - 1] + ", " +
-                 firms[size - 2] + " - " + actions[size - 2] + ", " +
-                 firms[size - 3] + " - " + actions[size - 3] + ", " +
-                 firms[size - 4] + " - " + actions[size - 4] + ", " +
-                 firms[size - 5] + " - " + actions[size - 5] + ".")
+    if(size > 10): 
+        lines.append("Most Recent Analysis by Experts: " +
+                     firms[size - 1] + " - " + actions[size - 1] + ", " +
+                     firms[size - 2] + " - " + actions[size - 2] + ", " +
+                     firms[size - 3] + " - " + actions[size - 3] + ", " +
+                     firms[size - 4] + " - " + actions[size - 4] + ", " +
+                     firms[size - 5] + " - " + actions[size - 5] + ".")
     
     # create a summary string with the comment data
     summary = ''
