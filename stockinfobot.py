@@ -18,7 +18,7 @@ import pandas as pd
 reddit = praw.Reddit(client_id = 'JW1hpceXZbX0hA',
                      client_secret = 'vUZL_wWniiybVOuAvgkHYgnb28o',
                      username = 'StockInfoBot',
-                     password = 'cheetah141',
+                     password = 'stockinfobot',
                      user_agent = 'wordbot by /u/jfishersolutions')                 
 subreddit = reddit.subreddit('StockInfoBotTest')
 key = '$$'
