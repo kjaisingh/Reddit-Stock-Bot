@@ -1,10 +1,11 @@
 # Reddit Stock Bot
-A Reddit-based bot that when invoked, provides information including daily highs/lows of a stock, information about the stock's company and recent recommendations on whether to buy or sell the stock. \
+
+### A know-it-all investing guru.
+/u/StockInfoBot is bot that when invoked, provides information including daily highs/lows of a stock, information about the stock's company and recent recommendations on whether to buy or sell the stock. \
 The bot operates on the /r/Investing and /r/Stocks subreddits, and is compatible with all stocks on the S&P-500, NASDAQ and NYSE indexes. \
-The bot can be found on Reddit as /u/StockInfoBot. 
 
+**Invokation**:
 
-### Invokation
 A sample invokation of the bot in the comments section of a post in one of the above subreddits is as follows:\
 *How is the stock of $$AAPL doing?*
 
@@ -20,7 +21,8 @@ The corresponding bot response is:\
 *Company Website*: http://www.apple.com. \
 *Recent Analysis by Analysts: Wedbush - Outperform, Raymond James - Outperform, DA Davidson - Buy, Nomura Instinet - Neutral, UBS - Buy.*
 
-### Execution
+**Execution**:
+
 1. Extract stock ticker information from dataset with S&P-500 information. 
 ~~~~
 python extraction.py
