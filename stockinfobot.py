@@ -13,13 +13,14 @@ import yfinance as yf
 from extraction import tickers
 import pandas as pd
 import string
+import os
 
 
 # defining basic variables
-reddit = praw.Reddit(client_id = 'JW1hpceXZbX0hA',
-                     client_secret = 'vUZL_wWniiybVOuAvgkHYgnb28o',
-                     username = 'StockInfoBot',
-                     password = 'stockinfobot',
+reddit = praw.Reddit(client_id = os.environ.get('REDDIT_CLIENT_ID'),
+                     client_secret = os.environ.get('REDDIT_CLIENT_SECRET'),
+                     username = os.environ.get('REDDIT_USERNAME'),
+                     password = os.environ.get('REDDIT_PASSWORD'),
                      user_agent = 'StockInfoBot by /u/kjaisingh')                 
 subreddit = reddit.subreddit('Investing+Stocks')
 key = '$$'
