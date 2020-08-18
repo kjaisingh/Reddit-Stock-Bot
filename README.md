@@ -1,7 +1,7 @@
 # Reddit Stock Bot
 
 ### A know-it-all investing guru.
-/u/StockInfoBot is bot that when invoked, provides information including daily highs/lows of a stock, information about the stock's company and recent recommendations on whether to buy or sell the stock. \
+The Stock Info Bot is a bot that when invoked, provides information including daily highs/lows of a stock, information about the stock's company and recent recommendations on whether to buy or sell the stock. \
 The bot operates on the /r/Investing and /r/Stocks subreddits, and is compatible with all stocks on the S&P-500, NASDAQ and NYSE indexes.
 
 **Invokation**:
