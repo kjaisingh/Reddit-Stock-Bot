@@ -22,13 +22,26 @@ The corresponding bot response is:\
 *Recent Analysis by Analysts: Wedbush - Outperform, Raymond James - Outperform, DA Davidson - Buy, Nomura Instinet - Neutral, UBS - Buy.*
 
 **Execution**:
+1. Configure your environment with the client_id, client_secret, username and password variables from a Reddit account.
+~~~~
+export REDDIT_CLIENT_ID=yourclientid
+~~~~~~~~ 
+~~~~
+export REDDIT_CLIENT_SECRET=yourclientsecret
+~~~~~~~~ 
+~~~~
+export REDDIT_USERNAME=yourusername
+~~~~~~~~ 
+~~~~
+export REDDIT_PASSWORD=yourpassword
+~~~~~~~~ 
 
-1. Extract stock ticker information from dataset with S&P-500 information. 
+2. Extract stock ticker information from dataset with S&P-500 information. 
 ~~~~
 python extraction.py
 ~~~~~~~~ 
 
-2. Execute Reddit bot after replacing information in the client_id, client_secret, username and password fields.
+3. Execute Reddit bot.
 ~~~~
 python stockinfobot.py
 ~~~~~~~~ 
